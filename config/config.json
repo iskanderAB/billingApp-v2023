@@ -1,0 +1,15 @@
+{
+  "development": {
+    "storage": "C:\\newVersionDataBase\\dataBase.sqlite",
+    "logging": true,
+    "dialect": "sqlite"
+  },
+  "test": {
+    "storage": "C:\\newVersionDataBase\\dataBase.sqlite",
+    "dialect": "sqlite"
+  },
+  "production": {
+    "storage": "C:\\newVersionDataBase\\dataBase.sqlite",
+    "dialect": "sqlite"
+  }
+}

@@ -1,0 +1,16 @@
+.collection-create-form_last-form-item {
+    margin-bottom: 0;
+}
+.toolsBar {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    margin: auto;
+    height: 4rem;
+    -webkit-box-shadow: 1px 1px 5px -2px #000000; 
+    box-shadow: 1px 1px 5px -2px #000000;
+    display: flex;
+    align-items: center;
+    padding-inline: 24px;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}

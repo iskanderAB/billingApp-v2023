@@ -1,0 +1,51 @@
+
+
+.row-dragging {
+    background: #fafafa;
+    border: 1px solid #ccc;
+    z-index: 1000;
+}
+
+.row-dragging td {
+    padding: 16px;
+}
+
+.row-dragging .drag-visible {
+    visibility: visible;
+}
+.productListForm  tbody tr td{
+    text-align: center;
+}
+.productListForm {
+    width: 100%;
+    margin:auto ;
+    border: 1px solid #bebebe;
+    border-top: black solid 4px  ;
+}
+.productListForm thead th {
+    background-color: #d0d0d0;
+    height: 50px;
+}
+.productListForm  ,th ,td {
+    /* border: none;  */
+    /* padding-inline: 10px; */
+    vertical-align:middle;
+}
+
+.productListForm td .ant-form-item {
+    margin-bottom: 0 ;
+}
+
+.productListForm td:nth-child(2){
+    margin-bottom: 0 ;
+}
+
+.remouveIcon { 
+    cursor: pointer;
+}
+.commandLine-total { 
+    white-space: nowrap;
+}
+/* .input-price {
+    width: ;
+} */

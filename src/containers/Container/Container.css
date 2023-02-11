@@ -1,0 +1,61 @@
+.subContainer{
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+}
+.icon-operation {
+    font-size: 22px;
+    color : red ;
+    cursor: pointer;
+}
+.operation {
+    display: flex;
+    justify-content: space-around;
+}
+.edit-icon {
+    color: rgb(70, 211, 70);
+}
+.delete-icon{
+    color: rgb(251, 102, 102);
+}
+.payment-icon{
+    color: #669966;
+}
+.edit-icon:hover {
+    margin-top:-.3vmin ;
+    cursor: pointer;
+}
+.delete-icon:hover {
+    margin-top:-.3vmin ;
+    cursor: pointer;
+}
+.payment-icon:hover {
+    margin-top:-.3vmin ;
+    cursor: pointer;
+}
+.icon-operation:hover{
+    margin-top:-.3vmin ;
+    cursor: pointer;
+}
+
+.pdf-icon{
+    color: rgb(251, 102, 102);
+}
+
+.pdf-icon{
+    color: red;
+}
+
+.pdf-icon:hover{
+    margin-top:-.3vmin ;
+    cursor: pointer;
+}
+
+.status {
+    border-radius: 10px;
+    cursor: pointer;
+}
+.switchItem{
+    display: block;
+    padding-left: 3px;
+}

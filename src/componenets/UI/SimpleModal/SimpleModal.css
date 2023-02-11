@@ -1,0 +1,8 @@
+.s-modal{
+    display: flex;
+    width: 100vw;
+    height: 70vh;
+    background : black;
+    z-index: 999999;
+    position: absolute
+}

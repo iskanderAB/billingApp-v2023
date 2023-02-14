@@ -43,7 +43,7 @@ const PaymentsModal = ({ visibility, setVisibility ,clientId, clients,fullName,A
     let som = 0
     for (let i = 0; i <= index; i++) {
       if (priceArray[i]['TTC'] ){ 
-          if(priceArray[i]['type'] === 'Avoir'){
+          if(priceArray[i]['type'] === 'Avoir' || priceArray[i]['type'] === 'Avoir-Facture' ){
             som -= +priceArray[i]['TTC'];
           }
           else{
@@ -163,7 +163,7 @@ const PaymentsModal = ({ visibility, setVisibility ,clientId, clients,fullName,A
                     key={`historyDoc-${i}`}
                     style={{
                       height: '40px',
-                      backgroundColor: v.reference && v.type === 'Avoir'? 
+                      backgroundColor: v.reference && (v.type === 'Avoir' || v.type === 'Avoir-Facture' )? 
                       '#a7ddfc' : v.reference ? '#ffc9c9' : '#d4efdf',
                     }}
                   >

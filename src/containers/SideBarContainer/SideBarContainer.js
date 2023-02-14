@@ -39,6 +39,11 @@ const Sidebarcontainer = () => {
                             Avoir
                         </Link>
                     </Menu.Item>
+                    <Menu.Item key="11">
+                        <Link to='/Avoir-Facture'>
+                            Avoir-Facture
+                        </Link>
+                    </Menu.Item>
                     <Menu.Item key="5">
                         <Link to='/delivery-note'>
                             Bon de livraison

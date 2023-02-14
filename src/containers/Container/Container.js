@@ -118,7 +118,20 @@ const Container = ({ data }) => {
                     (v) =>
                       v.type === 'Avoir' &&
                       (v.Person.includes(txtSearch) ||
-                        v.date.includes(txtSearch)),
+                        v.date.toString().includes(txtSearch)),
+                  )
+                  .reverse()}
+                columns={documentColumns}
+              />
+            </Route>
+            <Route path="/Avoir-Facture">
+              <DataTable
+                data={documents
+                  .filter(
+                    (v) =>
+                      v.type === 'Avoir-Facture' &&
+                      (v.Person.includes(txtSearch) ||
+                        v.date.toString().includes(txtSearch)),
                   )
                   .reverse()}
                 columns={documentColumns}
@@ -131,7 +144,7 @@ const Container = ({ data }) => {
                     (v) =>
                       v.type === 'releaseVoucher' &&
                       (v.Person.includes(txtSearch) ||
-                        v.date.includes(txtSearch)),
+                        v.date.toString().includes(txtSearch)),
                   )
                   .reverse()}
                 columns={documentColumns}

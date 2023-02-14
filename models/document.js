@@ -35,6 +35,7 @@ module.exports = (sequelize, DataTypes) => {
         "Facture",
         "Devis",
         "Avoir",
+        "Avoir-Facture",
         "deliveryNote",
         "releaseVoucher",
         "providerCommand",

@@ -89,12 +89,12 @@ export const addDocument = (type, baseTva, tvaTable) => {
           ? "F-" +
             (state().documentReducer.documents.filter(
               (v) => {
-                return v.type == "Facture" && v.date.includes(new Date().getFullYear())
+                return v.type == "Facture" &&  moment(v.date).year().toString() == new Date().getFullYear()
               }
             ).length === 0
               ? 1
               : +state()
-                  .documentReducer.documents.filter((v) => v.type == "Facture" && v.date.includes(new Date().getFullYear()))
+                  .documentReducer.documents.filter((v) => v.type == "Facture" &&  moment(v.date).year().toString() == new Date().getFullYear())
                   .reverse()[0]
                   ["reference"].split("-")[1] + 1)
           : type === "Avoir"
@@ -106,6 +106,16 @@ export const addDocument = (type, baseTva, tvaTable) => {
                   .documentReducer.documents.filter((v) => v.type == "Avoir")
                   .reverse()[0]
                   ["reference"].split("-")[1] + 1)
+          : type === "Avoir-Facture"
+              ? "AvF-" +
+                (state().documentReducer.documents.filter((v) => v.type == "Avoir-Facture")
+                  .length === 0
+                  ? 1
+                  : +state()
+                      .documentReducer.documents.filter((v) => v.type == "Avoir-Facture")
+                      .reverse()[0]
+                      ["reference"].split("-")[1] + 1)
+
           : type === "deliveryNote"
           ? "BL-" +
             (state().documentReducer.documents.filter(

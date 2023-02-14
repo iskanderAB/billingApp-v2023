@@ -25,6 +25,8 @@ const AddModal = ({ visible, onCreate, onCancel }) => {
               ? "Ajouter produit"
               : location.pathname === "/Avoir"
               ? "Création avoir"
+              : location.pathname === "/Avoir-Facture"
+              ? "Création avoir facture"
               : location.pathname === "/quote"
               ? "Création devis"
               : location.pathname === "/release-voucher"
@@ -60,6 +62,13 @@ const AddModal = ({ visible, onCreate, onCancel }) => {
               setCurrent={setCurrent}
               onCancel={onCancel}
               type={"Avoir"}
+            />
+          ) : location.pathname === "/Avoir-Facture" ? (
+            <DocumentForm
+              current={current}
+              setCurrent={setCurrent}
+              onCancel={onCancel}
+              type={"Avoir-Facture"}
             />
           ) : location.pathname === "/delivery-note" ? (
             <DocumentForm
